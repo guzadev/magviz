@@ -15,7 +15,7 @@ export default function ServicesPage() {
         <div className="container">
           <div className="text-center max-w-3xl mx-auto">
             <h1 className="text-4xl md:text-5xl font-poppins font-bold text-[#23323a] mb-6">{t("services.title")}</h1>
-            <p className="text-lg text-muted-foreground">{t("services.renders.content")}</p>
+            <p className="text-lg text-muted-foreground">{t("services.description")}</p>
           </div>
         </div>
       </section>

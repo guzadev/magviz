@@ -139,6 +139,10 @@ const translations: Translations = {
     es: "Servicios",
     en: "Services",
   },
+  "services.description": {
+    es: "En MAG Studio creamos imágenes que inspiran confianza, impulsan decisiones y ayudan a cerrar más negocios. Visualizá cada detalle con realismo antes de que se haga realidad.",
+    en: "At MAG Studio, we create images that build trust, drive decisions, and help close more deals. Visualize every detail with realism—before it becomes reality.",
+  },
   "services.renders.title": {
     es: "Renders Estáticos",
     en: "Static Renders",
