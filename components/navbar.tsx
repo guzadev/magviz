@@ -67,11 +67,11 @@ export function Navbar() {
         <Link href={`/${locale}`} className="flex items-center">
           <div className={cn(
             "relative h-16 w-16 rounded-full overflow-hidden flex items-center justify-center",
-            isHomePage && !isScrolled ? "bg-[#eae0d6]" : "bg-[#23323a]"
+            isHomePage && !isScrolled ? "bg-[#eae0d6]" : "bg-white"
           )}>
             <span className={cn(
               "font-museo-moderno font-bold text-lg text-center px-0.5",
-              isHomePage && !isScrolled ? "text-[#23323a]" : "text-[#eae0d6]"
+              isHomePage && !isScrolled ? "text-[#23323a]" : "text-[#23323a]"
             )}>MAG.</span>
           </div>
         </Link>

@@ -13,16 +13,51 @@ export async function generateMetadata({ params }: { params: { locale: string } 
   return {
     title: "MAG Studio | " + (locale === "es" ? "Visualización Arquitectónica" : "Architectural Visualization"),
     description: locale === "es"
-      ? "Estudio profesional de visualización arquitectónica y renderizado 3D"
-      : "Professional architectural visualization and 3D rendering studio",
-    metadataBase: new URL("https://magstudio.com"),
+      ? "Estudio profesional de visualización arquitectónica, renders fotorrealistas, animaciones 3D y recorridos interactivos."
+      : "Professional architectural visualization studio: photorealistic renders, 3D animations, and interactive walkthroughs.",
+    metadataBase: new URL("https://magviz.vercel.app"),
+    keywords: locale === "es"
+      ? [
+          "renders arquitectónicos",
+          "visualización arquitectónica",
+          "render 3D",
+          "animaciones arquitectura",
+          "recorridos virtuales arquitectura",
+          "MAG Studio",
+        ]
+      : [
+          "architectural renders",
+          "3D visualization",
+          "rendering studio",
+          "architectural animation",
+          "virtual tours architecture",
+          "MAG Studio",
+        ],
     openGraph: {
       type: "website",
       locale: locale,
+      url: "https://magviz.vercel.app",
+      siteName: "MAG Studio",
       title: "MAG Studio | " + (locale === "es" ? "Visualización Arquitectónica" : "Architectural Visualization"),
       description: locale === "es"
-        ? "Estudio profesional de visualización arquitectónica y renderizado 3D"
-        : "Professional architectural visualization and 3D rendering studio",
+        ? "Renders fotorrealistas, animaciones 3D y recorridos virtuales para arquitectura."
+        : "Photorealistic renders, 3D animations and virtual walkthroughs for architecture.",
+      images: [
+        {
+          url: "og-image.png",
+          width: 1200,
+          height: 630,
+          alt: "MAG Studio - Visualización Arquitectónica",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "MAG Studio",
+      description: locale === "es"
+        ? "Visualización arquitectónica de alta calidad: renders, animaciones y recorridos."
+        : "High-end architectural visualization: renders, animations, and tours.",
+      images: ["https://magviz.vercel.app/og-image.png"],
     },
   };
 }

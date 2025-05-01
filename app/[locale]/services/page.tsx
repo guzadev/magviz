@@ -44,13 +44,13 @@ export default function ServicesPage() {
                 })()}
               </ul>
             </div>
-            <div className="order-1 lg:order-2 relative h-[400px] rounded-lg overflow-hidden">
-              <Image src="/images/services/render.jpg?height=800&width=1200" alt="Static Renders" fill className="object-cover" />
+            <div className="order-1 lg:order-2 relative w-full max-w-[700px] mx-auto aspect-[16/9] bg-black rounded-lg overflow-hidden">
+              <Image src="/images/services/render.jpg?height=1080&width=1200" alt="Static Renders" fill className="object-contain" />
             </div>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-16 items-center mb-24">
-          <div className="order-1 lg:order-2 relative h-[400px] rounded-lg overflow-hidden">
+          <div className="order-1 lg:order-2 relative w-full max-w-[350px] mx-auto aspect-[9/16] bg-black rounded-lg overflow-hidden">
             <iframe
               className="w-full h-full rounded-lg"
               src="https://www.youtube.com/embed/G0xXOAdhXk8?autoplay=1&mute=1&loop=1&playlist=G0xXOAdhXk8&modestbranding=1&controls=0"

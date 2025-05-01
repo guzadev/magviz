@@ -30,7 +30,7 @@ export default function AboutPage() {
               <h1 className="text-4xl md:text-5xl font-poppins font-bold text-[#23323a] mb-6">{t("about.title")}</h1>
               <p className="text-lg text-muted-foreground mb-6">{t("about.story.content")}</p>
             </div>
-            <div className="relative h-[400px] rounded-lg overflow-hidden">
+            <div className="relative w-full max-w-[500px] mx-auto aspect-[4/5] rounded-lg overflow-hidden">
               <Image src="/nosotros.jpg?height=800&width=1200" alt="MAG Studio Team" fill className="object-cover" />
             </div>
           </div>

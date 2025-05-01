@@ -51,7 +51,7 @@ export default function WorkflowPage() {
         <div className="container">
           <div className="relative">
             {/* Vertical line */}
-            <div className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-[#eae0d6] -translate-x-1/2 hidden md:block"></div>
+            <div className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-[#23323a] -translate-x-1/2 hidden md:block"></div>
 
             {workflowSteps.map((step, index) => (
               <div
@@ -68,8 +68,8 @@ export default function WorkflowPage() {
                   </div>
                   <p className="text-muted-foreground">{step.description}</p>
                 </div>
-                <div className="relative h-[300px] rounded-lg overflow-hidden">
-                  <Image src={step.image || "/placeholder.svg"} alt={step.title} fill className="object-cover" />
+                <div className="relative w-full max-w-[500px] mx-auto aspect-[4/5] rounded-lg overflow-hidden">
+                  <Image src={step.image || "/placeholder.svg"} alt={String(step.title)} fill className="object-cover" />
                 </div>
               </div>
             ))}
